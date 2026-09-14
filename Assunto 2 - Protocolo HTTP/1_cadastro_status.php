@@ -19,5 +19,32 @@
 
 </form>
 
+<!--Linha horizontal-->
+<hr>
+<?php
+// $_SERVER é uma variável superglobal do PHP que contém informações sobre requisição feitas pelo servidor.Aqui ele esta confirmando se a requisição é via POST (Protocolo HTTP)
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    //Se sim ele acessa as informações (Nome e idade)
+    $nome = $_POST["nome"];
+    $idade = $_POST["idade"];
+
+    // Tratando erros e interagindo.
+
+    // Erro: Não prencheu nome e idade.
+    if ($nome == "" || $idade == "") {}
+    http_response_code(400),
+    echo "<h2>Status 400 - Faltou nome ou idade</h2>";
+} else {
+    http_response_code(201);
+
+}
+
+} else {
+    //Usuário ainda não enviou nada.
+    http_response_code(200);
+    echo "<p> Preencha "
+}
+?>
+
 </body>
 </html>
