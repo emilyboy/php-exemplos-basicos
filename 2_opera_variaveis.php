@@ -1,18 +1,18 @@
 <?php
 
-//Passando valores pela URL (GET)
-//http://localhost/php-exemplos-basicos/2_opera_variaveis.php?numero1=10&numero2=5
+// Passando valores pela URL (Método GET)
+// http://localhost/php-exemplos-basicos/2_opera_variaveis.php?numero1=10&numero2=5
 
-// Recebe 2 valores 
+// Recebe 2 valores
 $numero1 = $_GET["numero1"];
 $numero2 = $_GET["numero2"];
 
 // Verifica se os valores foram passados corretamente
-// A função nativa do php "isset" faz isso
-if (isset($numero1) && isset($numero2)) {
-     $numero1 = (float)$numero1;
-     $numero2 = (float)$numero2;";
-}
+// A função nativa do PHP "isset" faz isso
+if (isset( $numero1 ) && ( $numero2 ) ) {
+    $numero1 = (float)$numero1;
+    $numero2 = (float)$numero2;
+
 // Cálculos
 $soma = $numero1 + $numero2;
 $subtracao = $numero1 - $numero2;
@@ -26,5 +26,5 @@ echo "Multiplicação: $multiplicacao <br>";
 echo "Divisão: $divisao <br>";
 
 } else {
-    echo "Por favor, passe os valores corretamente pela URL.";
+    echo "Por favor, forneça os valores pela URL";
 }

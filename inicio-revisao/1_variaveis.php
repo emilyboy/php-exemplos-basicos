@@ -1,11 +1,12 @@
 <?php
 
-// Criação de variáveis
-$n1 = 5;
+// Criação das variáveis
+$n1 = 45;
 $n2 = 16;
 
-// Somando
+// Soamando
 $soma = $n1 + $n2;
 
-echo "A soma de n1 + n2 é igual a: $soma " ;
-echo " A soma de n1 + n2 é igual a: " . $soma;
+// Exibindo o resultado
+// echo "A soma de n1 + n2 é igual a: $soma";
+echo "A soma de n1 + n2 é igual a:" .$soma;

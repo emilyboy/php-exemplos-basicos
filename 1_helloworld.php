@@ -1,7 +1,6 @@
 <?php
 
-// texto em php
-echo "Hello, World!";
+// Texto em php
+echo "Olá, mundo!!";
 
 ?>
-0
