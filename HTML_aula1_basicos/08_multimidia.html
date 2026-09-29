@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas Avançadas e Multimídia</title>
+    <style>
+        /* Define a largura da tabela para 50% da largura do elemento pai (normalmente o body) */
+        table {
+            width: 50%; /* tabela fica proporcionalmente menor e mais compacta */
+
+            /* Remove o espaçamento entre bordas adjacentes para apresentar bordas únicas */
+            border-collapse: collapse;
+
+            /* Espaço inferior para separar visualmente da próxima seção */
+            margin-bottom: 20px;
+        }
+
+        /* Aplica borda e espaçamento interno tanto em cabeçalhos (th) quanto nas células (td) */
+        th, td {
+            border: 1px solid black; /* bordas pretas sólidas de 1px */
+            padding: 8px;            /* espaçamento interno para "respirar" o conteúdo */
+        }
+
+        /* Estiliza as células do cabeçalho */
+        th {
+            background-color: #333; /* fundo escuro para destaque */
+            color: white;          /* texto branco para contraste e legibilidade */
+        }
+
+        /* Estiliza a linha do rodapé da tabela */
+        tfoot {
+            background-color: #ffff99; /* fundo amarelo claro para chamar atenção */
+            font-weight: bold;        /* texto em negrito para importância */
+        }
+
+        /* Classe para alinhar texto à direita (útil para números e valores monetários) */
+        td.num-right {
+            text-align: right; /* valores alinhados à direita facilitam leitura numérica */
+        }
+    </style>
+</head>
+<body>
+    <h1>Relatório de Vendas</h1>
+
+    <!-- TABELA SIMPLIFICADA E MAIS COMPACTA -->
+    <table>
+        <caption>Vendas por Região - 2025</caption>
+        <thead>
+            <tr>
+                <!-- Cabeçalho para a coluna Região -->
+                <th>Região</th>
+                <!-- Cabeçalhos para os Trimestres -->
+                <th>1º Tri</th>
+                <th>2º Tri</th>
+                <th>3º Tri</th>
+                <!-- Cabeçalho para o total geral -->
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Linha de dados para a região Norte -->
+                <td>Norte</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right"><strong>R$ 37.000</strong></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- Rodapé com total geral -->
+                <td>Total Geral</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right">R$ 37.000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- MULTIMÍDIA EM HTML5 -->
+
+    <h2>Inserindo vídeos locais</h2>
+    <!-- Vídeo usando um arquivo local, com largura fixa e imagem prévia (poster) -->
+    <video width="500" poster="assets/limoes-capa.png" controls>
+        <source src="assets/meu-video.mp4" type="video/mp4">
+        <!-- Mensagem que aparece se o navegador não suportar a tag vídeo -->
+        Seu navegador não suporta vídeo HTML5.
+    </video>
+    <hr>
+
+    <h2>Inserindo vídeos do YouTube</h2>
+    <!-- Vídeo incorporado via iframe com configurações para controle de permissões -->
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/eqUFr3m13V"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <hr>
+
+    <h2>Vamos aprender a reproduzir áudios em HTML5.</h2>
+    <!-- Reprodutor de áudio com autoplay e controles visíveis -->
+    <audio preload="metadata" autoplay controls>
+        <source src="assets/happy-mistake.mp3" type="audio/mpeg">
+        <!-- Mensagem alternativa caso áudio não seja suportado -->
+        Seu navegador não suporta áudio HTML5.
+    </audio>
+</body>
+</html>
