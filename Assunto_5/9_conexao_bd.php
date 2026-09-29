@@ -3,8 +3,8 @@
 
 $servername = 'localhost';
 $username = 'root';
-$password = '';
-$dbname = 'exercicio';
+$password = 'Senai@118';
+$dbname = 'exercício';
 
 try {
     // Tenta criar uma conexão com o banco de dados
