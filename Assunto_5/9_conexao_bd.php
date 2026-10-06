@@ -4,7 +4,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = 'Senai@118';
-$dbname = 'exercício';
+$dbname = 'exercicio';
 
 try {
     // Tenta criar uma conexão com o banco de dados
